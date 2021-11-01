@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
+                    <div>
+                        <label for="name" >Name</label>
+                        <input type="text" name="name" id="name" pattern="[A-Za-z]+">
+                    </div>
+                    <div>
+                        <label for="department">Department</label>
+                        <input type="text" name="department" id="department" pattern="[A-Za-z]+" >
+                    </div>
+                    <div>
+                        <label for="ID">ID</label>
+                        <input type="number" name="ID" id="ID" >
+                    </div>
+                    <div>
+                        <label for="Salary">Salary</label>
+                        <input type="number" name="Salary" id="Salary">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                </td>
+                </tr>
+                </table>
+
+                
+                    <input  type="text" name="" id="myInput" placeholder="Name" onkeyup="searchFun()">
+                    <table class="list" id="empList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>ID</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+         
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
